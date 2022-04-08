@@ -2,7 +2,7 @@
 document.write('<h1>Operadores Aritméticos em JavaScript</h1>')
 
 //Operadores Aritméticos
-var num = 42;
+/*var num = 42;
 var valor = 15;
 
 //Soma
@@ -29,3 +29,9 @@ document.write("<br>");
 var modulo = num % valor;
 document.write("O módulo dos numeros " + num + " e " + valor + " é de " + modulo + "<br>");
 document.write("<br>");
+*/
+
+var teste = 10;
+teste += 20;
+
+document.write(teste);
