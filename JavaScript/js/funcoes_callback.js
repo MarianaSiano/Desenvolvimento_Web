@@ -14,7 +14,7 @@ var callbackErro = function(erro) {
 
 function exibirArtigo(id, callbackSucesso, callbackErro) {
     /* Lógica: Recuperar o id via
-aquisição HTTP */
+    aquisição HTTP */
     if(false) {
         callbackSucesso('Funcoes de callback em JS', 'Funcoes de descrição');
     }
