@@ -8,6 +8,7 @@
     </head>
 
     <body>
+
         <?php
             echo 'Tag padrão';
         ?>
@@ -17,6 +18,7 @@
         <?=
             'Tag impressão';
         ?>
+        
     </body>
 
 </html>
