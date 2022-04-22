@@ -4,19 +4,21 @@
 
     <head lang="pt-br">
         <meta charset="utf-8" />
-        <title>Embutindo blocos PHP em Páginas HTML</title>
+        <title>Saida de Dados</title>
     </head>
 
     <body>
+
         <?php
-            echo 'Tag padrão';
+            echo 'Comando echo';
         ?>
 
         <br />
 
-        <?=
-            'Tag impressão';
+        <?php
+            print 'Comando print';
         ?>
+        
     </body>
 
 </html>
