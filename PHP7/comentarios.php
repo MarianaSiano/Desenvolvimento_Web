@@ -8,6 +8,21 @@
     </head>
 
     <body>
+
+        <?php
+            //Comentário de uma linha 
+        ?>
+
+        <?php
+            #Comentário de uma linha
+        ?>
+
+        <?php
+           /* Comemtário 
+            de varias
+            linhas */ 
+        ?>
+        
     </body>
 
 </html>
