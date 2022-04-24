@@ -4,7 +4,7 @@
 
     <head lang="pt-br">
         <meta charset="utf-8" />
-        <title>Saida de Dados</title>
+        <title>Saida de Dados em PHP</title>
     </head>
 
     <body>
