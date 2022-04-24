@@ -10,12 +10,20 @@
     <body>
 
         <?php
-            if($condicao) {
-                //Trecho de código que será executado
+            //Operadores de Comparação
+        ?>
+
+        <?php
+            $valor1 = 15;
+            $valor2 = 20;
+            if($valor1 < $valor2) {
+                echo 'Entrou no if, então o $valor1 que é: ' + $valor1 + ' é menor que o $valor2, que é: ' + $valor2;
+                echo 'Então é verdadeiro';
             }
 
             else {
-                //Trecho de código que será executado
+                echo 'Entrou no else, então o $valor1 que é: ' + $valor1 + ' é maior que o $valor2, que é: ' + $valor2;
+                echo 'Então é falso';
             }
         ?>
 
