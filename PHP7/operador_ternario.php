@@ -7,7 +7,15 @@
         <title>Operador Ternário em PHP</title>
     </head>
 
-    <body> 
+    <body>
+
+        <?php
+            /*
+            Sintaxe do operador ternário:
+            <condicao> ? true : false
+            */
+        ?>
+
     </body>
 
 </html>
