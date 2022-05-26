@@ -1,5 +1,5 @@
 # HTML5
-Esse curso é lecionado pelo professor Jorge Sant Anna e Jamilton Damasceno
+Esse curso é lecionado pelo professor Jamilton Damasceno
 
 
 ## Curso da Udemy
