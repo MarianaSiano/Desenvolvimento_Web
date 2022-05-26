@@ -16,8 +16,11 @@ Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaS
 ## Curso 3 - CSS3 - Intermediário & Avançado
 * Está na branch CSS3-Intermediario-Avancado
 
-## Curso 4 - HTML5 E CSS3
+## Curso 4 - HTML5 e CSS3
 * Está na branch HTML5-CSS3
 
 ## Curso 5 - JavaScript
 * Está na branch JavaScript
+
+## Curso 6 - PHP7
+* Está na branch PHP7
