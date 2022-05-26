@@ -1,5 +1,5 @@
 # Desenvolvimento Web com 20 Cursos + 20 Projetos
-Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaScript dentre outros, com os professores Jorge Sant Anna e Jamilton Damasceno
+Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaScript dentre outros, com os professores Jorge Sant Ana e Jamilton Damasceno
 
 
 ## Curso da Udemy
@@ -18,3 +18,6 @@ Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaS
 
 ## Curso 4 - HTML5 E CSS3
 * Está na branch HTML5-CSS3
+
+## Curso 5 - JavaScript
+* Está na branch JavaScript
