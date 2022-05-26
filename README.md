@@ -5,5 +5,5 @@ Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaS
 ## Curso da Udemy
 *  [Desenvolvimento Web Completo 2022 - 20 Cursos + 20 Projetos](https://www.udemy.com/course/web-completo/)
 
-## Curso 1
-* HTML5 está na branch HTML5
+## Curso 1 - HTML5
+* Está na branch HTML5
