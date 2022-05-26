@@ -1,0 +1,36 @@
+/* Tags */
+
+body {
+    background-color: #D8BFD8;
+}
+
+h1 {
+    margin: 30px;
+    color: #8B008B;
+}
+
+/* Ids */
+
+#transicoes {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 6px;
+    background: #9370DB;
+}
+
+#transicoes h1 {
+    color: #008080;
+    text-align: center;
+}
+
+#transicoes p {
+    color: #8B008B;
+    text-align: justify;
+}
+
+#transicoes:hover {
+    width: 350px;
+    background: #00FFFF;
+    transition: all 3s;
+}
