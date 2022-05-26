@@ -10,3 +10,6 @@ Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaS
 
 ## Curso 2 - CSS3
 * Está na branch CSS3
+
+## Curso 3 - CSS3 - Intermediário & Avançado
+* Está na branch CSS3-Intermediario-Avancado
