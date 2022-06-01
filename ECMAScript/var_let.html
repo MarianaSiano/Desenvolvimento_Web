@@ -3,11 +3,12 @@
     <head>
         <title>Var e Let ECMAScript</title>
 
-        <script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
             //Temos 3 (três) escopos: global, função e bloco
 
             function x() {
-                if(true) //Escopo de bloco
+                if(true)
                 {
                     //Teste
                 }
@@ -17,7 +18,8 @@
 
             if(true) //Escopo de bloco
             {
-
+                let serie = 'Friends';
+                console.log(serie);
             }
         </script>
     </head>
