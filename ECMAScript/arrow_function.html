@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function no ECMAScript</title>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            //Função anônima tradicional
+            let quadrado = function(x = 1) {
+                return x * x;
+            }
+
+            document.write('Função anônima Tradicional => ' + quadrado(4));
+            document.write("<br>");
+            document.write("<br>");
+
+            //Arrow Function
+            let quadrado2 = (x = 1) => {
+                return x * x;
+            }
+
+            document.write('Arrow function => ' + quadrado2(3));
+            document.write('<br>');
+            document.write('<br>');
+
+            //Arrow Functio de uma linha só
+            let quadrado3 = x => x * x; //return implícito
+
+            document.write('Arrow function de uma linha => ' + quadrado3(7));
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
