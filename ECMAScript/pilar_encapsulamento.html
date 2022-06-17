@@ -5,6 +5,21 @@
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
+
+            class Tv {
+                constructor() {
+                    this._relacaoCanais = Array(2, 4, 5, 7, 10);
+                    this._canalAtivo = 5;
+                    this._volume = 7;
+                }
+            }
+
+            let tv = new Tv();
+
+            //Canal Ativo
+            document.write("Canal ativo => " + tv.canalAtivo);
+            document.write("<br>");
+            document.write("<br>");
         </script>
     </head>
 
