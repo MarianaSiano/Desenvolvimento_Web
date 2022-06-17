@@ -5,6 +5,48 @@
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
+            //Modelo da entidade/objeto
+            class ContaBancaria {
+                //Agencia, Número da conta
+                //Saldo, limite
+
+                constructor() {
+                    this.agencia = 1056;
+                    this.numeroConta = 2398547;
+                    this.saldo = 10500;
+                    this.limite = 680;
+                }
+
+                depositar(valorDeposito) {
+                    this.saldo += valorDeposito;
+                }
+
+                sacar(valorSaque) {
+                    this.saldo -=valorSaque;
+                }
+
+                consultarSaldo() {
+                    return this.saldo;
+                }
+            }
+
+            //Consultar Saldo
+            let conta = new ContaBancaria();
+            document.write("Saldo da Conta => " + conta.consultarSaldo() + " reais.");
+            document.write("<br>");
+            document.write("<br>");
+
+            //Depositar
+            conta.depositar(230);
+            document.write("Saldo atual da conta => " + conta.consultarSaldo() + " reais.");
+            document.write("<br>");
+            document.write("<br>");
+
+            //Sacar
+            conta.sacar(50);
+            document.write("Saldo atual da conta => " + conta.consultarSaldo() + " reias.");
+            document.write("<br>");
+            document.write("<br>");
         </script>
     </head>
 
