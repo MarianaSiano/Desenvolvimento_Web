@@ -5,10 +5,15 @@
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
-            class Chachorro {
+            class Animal {
                 constructor() {
-                    this.cor = 'Branco e marrom';
-                    this.tamanho = 30;
+                    this.cor = '';
+                    this.tamanho = null;
+                }
+            }
+
+            class Cachorro {
+                constructor() {
                     this.orelhas = 'Grandes e caídas';
                 }
 
@@ -33,8 +38,6 @@
 
             class Passaro {
                 constructor() {
-                    this.cor = 'Branco e marrom';
-                    this.tamanho = 10;
                     this.bico = 'Curto';
                 }
 
@@ -50,6 +53,13 @@
                     document.write('<br>');
                 }
             }
+
+            let dog = new Cachorro();
+            let passaro = new Passaro();
+
+            console.log(dog);
+
+            console.log(passaro);
         </script>
     </head>
 
