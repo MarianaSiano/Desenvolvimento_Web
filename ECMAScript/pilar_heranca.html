@@ -10,21 +10,22 @@
                     this.cor = '';
                     this.tamanho = null;
                 }
+
+                dormir() {
+                    document.write('Dormir');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
             }
 
-            class Cachorro {
+            class Cachorro extends Animal {
                 constructor() {
+                    super();
                     this.orelhas = 'Grandes e caídas';
                 }
 
                 correr() {
                     document.write('Correr');
-                    document.write('<br>');
-                    document.write('<br>');
-                }
-
-                dormir() {
-                    document.write('Dormir');
                     document.write('<br>');
                     document.write('<br>');
                 }
@@ -36,8 +37,9 @@
                 }
             }
 
-            class Passaro {
+            class Passaro extends Animal {
                 constructor() {
+                    super();
                     this.bico = 'Curto';
                 }
 
@@ -46,20 +48,12 @@
                     document.write('<br>');
                     document.write('<br>');
                 }
-
-                dormir() {
-                    document.write('Dormir');
-                    document.write('<br>');
-                    document.write('<br>');
-                }
             }
 
             let dog = new Cachorro();
             let passaro = new Passaro();
-
-            console.log(dog);
-
-            console.log(passaro);
+            
+            document.write(dog.dormir());
         </script>
     </head>
 
