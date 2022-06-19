@@ -50,10 +50,24 @@
                 }
             }
 
+            class Papagaio extends Passaro {
+                constructor() {
+                    super();
+                    this.sabeFalar = true;
+                }
+
+                falar() {
+                    console.log('Falar');
+                }
+            }
+
             let dog = new Cachorro();
             let passaro = new Passaro();
+            let papagaio = new Papagaio();
             
             document.write(dog.dormir());
+
+            console.log(papagaio);
         </script>
     </head>
 
