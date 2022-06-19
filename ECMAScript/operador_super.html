@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operador Super no ECMAScript</title>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            class Animal {
+                constructor() {
+                    this._cor = '';
+                    this._tamanho = null;
+                }
+
+                dormir() {
+                    document.write('Dormir');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor() {
+                    super();
+                    this._bico = '';
+                }
+
+                voar(){
+                    document.write('Voar');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor() {
+                    super();
+                    this._sabeFalar = true;
+                }
+
+                falar() {
+                    document.write('Falar');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+
+                //get 
+                get bico() {
+                    return this._bico;
+                }
+
+                get cor() {
+                    return this._cor;
+                }
+
+                //set
+                set bico(bico) {
+                    this._bico = bico;
+                }
+
+                set cor(cor) {
+                    this._cor = cor;
+                }
+            }
+
+            let papagaio = new Papagaio();
+            console.log(papagaio);
+
+            //set tamanho do bico do papagaio
+            papagaio.bico = 'Médio';
+            document.write("Tamanho do bico do papagaio => " + papagaio.bico);
+            document.write("<br>");
+            document.write("<br>");
+
+            //set cor do papagaio
+            papagaio.cor = "Verde";
+            document.write("Cor do Papagaio => " + papagaio.cor);
+            document.write("<br>");
+            document.write("<br>");
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
