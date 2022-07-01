@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Operador Super no ECMAScript</title>
+        <title>Orientação a Objetos - Pilar de Polimorfismo no ECMAScript</title>
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
+            class Animal {
+                constructor() {
+                    this._cor = '';
+                    this._tamanho = null;
+                }
+
+                dormir() {
+                    document.write('Dormir');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor() {
+                    super();
+                    this._bico = '';
+                }
+
+                voar(){
+                    document.write('Voar');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor() {
+                    super();
+                    this.sabeFalar = true;
+                }
+
+                falar() {
+                    console.log('Falar');
+                }
+            }
+
+            class Avestruz extends Passaro {
+                constructor() {
+                    super();
+                }
+
+                enterrarCabeca() {
+                    document.write('Enterrar a cabeça');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+
+                voar() {
+                    document.write('Não sabe voar');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            let passaro = new Passaro();
+            let papagaio = new Papagaio();
+            let avestruz = new Avestruz();
+
+            console.log(papagaio);
+            console.log(avestruz);
+
+            papagaio.voar();
+            avestruz.enterrarCabeca();
+            avestruz.voar();
         </script>
-    </head>
 
     <body>
         <div id="output"></div>
