@@ -25,6 +25,44 @@
             objeto.exibirResumo();
             document.write('<br>');
             document.write('<br>');
+
+            let objetoMelhoria = {
+                nome, //nome = nome variavel / valor = valor da variável
+                idade,
+                sexo,
+                profissao,
+                exibirResumoMelhoria: function() {
+                    document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                }
+            }
+
+            console.log(objetoMelhoria);
+
+            document.write('Objeto com Melhoria:');
+            document.write('<br>');
+            document.write('<br>');
+            objetoMelhoria.exibirResumoMelhoria();
+            document.write('<br>');
+            document.write('<br>');
+
+            let objetoMelhoriaFuncao = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                exibirResumoMelhoriaFuncao  () {
+                    document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                }
+            }
+
+            console.log(objetoMelhoriaFuncao);
+
+            document.write('Objeto com Melhoria de Função:');
+            document.write('<br>');
+            document.write('<br>');
+            objetoMelhoriaFuncao.exibirResumoMelhoriaFuncao();
+            document.write('<br>');
+            document.write('<br>');
         </script>
     </head>
 
