@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modificando Valores no ECMAScript</title>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            let pessoa = {
+                nome: 'Maria',
+                idade: 30
+            }
+
+            document.write(pessoa.nome);
+            document.write('<br>');
+            document.write('<br>');
+
+            //Modificando valores
+            pessoa.nome = 'Gabriella';
+            pessoa.idade = 25;
+            
+            document.write(pessoa.nome);
+            document.write('<br>');
+            document.write('<br>');
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
