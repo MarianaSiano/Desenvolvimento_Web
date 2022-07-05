@@ -5,6 +5,26 @@
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
+            let nome = 'Jorge';
+            let idade = 29;
+            let sexo = 'masculino';
+            let profissao = 'programador';
+
+            let objeto = {
+                nome: nome,
+                idade: idade,
+                sexo: sexo,
+                profissao: profissao,
+                exibirResumo: function() {
+                    document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                }
+            }
+
+            console.log(objeto);
+
+            objeto.exibirResumo();
+            document.write('<br>');
+            document.write('<br>');
         </script>
     </head>
 
