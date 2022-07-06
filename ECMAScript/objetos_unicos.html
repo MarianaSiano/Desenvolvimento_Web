@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos Únicos no ECMAScript</title>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            let assinatura ={
+                idCliente: 1000,
+                descricao: 'Acesso a internet',
+                status() {
+                    document.write('Ativo');
+                }
+            }
+
+            //Assinatura
+            document.write(assinatura.descricao);
+            document.write('<br>');
+            document.write('<br>');
+
+            //Variaval recebendo 'Assinatura' 
+            let y = assinatura;
+            document.write(y.descricao);
+            document.write('<br>');
+            document.write('<br>');
+
+            //Moficando a descrição
+            y.descricao = 'Internet com televisão';
+            document.write(y.descricao);
+            document.write('<br>');
+            document.write('<br>');
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
