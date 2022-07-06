@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Orientação a Objetos - Pilar de Herança no ECMAScript</title>
+        <title>Inclusão de Atributos no ECMAScript</title>
 
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
+            let pessoa = {
+                nome: 'Fernanda',
+                idade: 20
+            }
+
+            console.log(pessoa);
+            
+            pessoa.sexo = 'Feminino';
+            console.log(pessoa);
         </script>
     </head>
 
