@@ -6,14 +6,26 @@
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
             let Carro = function() {
+
+                var velocidadeMaxima = 180;
+                var quilometrosRodados = 0;
+
                 this.cor = 'Amarelo';
                 this.modelo = 'Chevette';
                 this.velocidadeAtual = 0;
-                this.velocidadeMaxima = 180;
 
                 this.acelerar = function() {
-                    let velocidade = this.velocidadeAtual += 10;
+                    let velocidade = this.getVelocidadeAtual() + 50;
+                    if(velocidade > velocidadeMaxima) {
+                        velocidade = velocidadeMaxima;
+                    }
+
                     this.setVelocidadeAtual(velocidade);
+
+                    setQuilometrosRodados(0.09);
+                    document.write('Quilometros Rodados => ' + quilometrosRodados);
+                    document.write("<br>");
+                    document.write("<br>");
                 }
 
                 this.getVelocidadeAtual = function() {
@@ -23,9 +35,55 @@
                 this.setVelocidadeAtual = function(velocidadeAtual) {
                     this.velocidadeAtual = velocidadeAtual;
                 }
+
+                var setQuilometrosRodados = function(km) {
+                    quilometrosRodados += km;
+                }
             }
 
             let carro = new Carro();
+            
+            //Acelerou a primeira vez
+            document.write("Acelerando pela primeira vez");
+            document.write("<br>");
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("Velocidade Atual => " + carro.velocidadeAtual);
+            document.write("<br>");
+            document.write("<br>");
+            carro.acelerar();
+
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("<br>");
+
+            //Acelerou a segunda vez
+            document.write("Acelerando pela segunda vez");
+            document.write("<br>");
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("Velocidade Atual => " + carro.velocidadeAtual);
+            document.write("<br>");
+            document.write("<br>");
+            carro.acelerar();
+
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("<br>");
+
+            //Acelerou a terceira vez
+            document.write("Acelerando pela terceira vez");
+            document.write("<br>");
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("Velocidade Atual => " + carro.velocidadeAtual);
+            document.write("<br>");
+            document.write("<br>");
+            carro.acelerar();
+
+            document.write("----------------------------------------");
+            document.write("<br>");
+            document.write("<br>");
         </script>
     </head>
 
