@@ -22,5 +22,8 @@ Curso da Udemy de Desenvolvimento Web Completo, com HTML5, CSS, Bootstrap, JavaS
 ## Curso 5 - JavaScript
 * Está na branch JavaScript
 
-## Curso 6 - PHP7
+## Curso 6 - ECMAScript
+* Está na branch ECMAScript
+
+## Curso 7 - PHP7
 * Está na branch PHP7
