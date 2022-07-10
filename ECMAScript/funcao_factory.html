@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funções Factory no ECMAScript</title>
+
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+            let Bicicleta = {
+                cor: 'Branca',
+                marcha: 'Única',
+                aro: 12,
+
+                pedalar() {
+                    document.write('Método pedalar executado');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            let Bicicleta1 = {
+                cor: 'Vermelha',
+                marcha: '18',
+                aro: 26,
+
+                pedalar() {
+                    document.write('Método pedalar executado');
+                    document.write('<br>');
+                    document.write('<br>');
+                }
+            }
+
+            console.log(Bicicleta);
+            console.log(Bicicleta1);
+
+            let BicicletaFactory = function(cor, marcha, aro) {
+                return {
+                    cor,
+                    marcha,
+                    aro,
+
+                    pedalar() {
+                        document.write('Método pedalar executado');
+                        document.write('<br>');
+                        document.write('<br>');
+                    }
+                }
+            }
+
+            let Bicicleta2 = BicicletaFactory('Verde e Branca', 'Única', 10);
+            console.log(Bicicleta2);
+
+            document.write(`Cor: ${Bicicleta2.cor}`)
+            document.write('<br>');
+            document.write('<br>');
+            document.write(`Marcha: ${Bicicleta2.marcha}`)
+            document.write('<br>');
+            document.write('<br>');
+            document.write(`Aro: ${Bicicleta2.aro}`)
+            document.write('<br>');
+            document.write('<br>');
+            document.write('------------------------------');
+            document.write('<br>');
+            document.write('<br>');
+            Bicicleta2.pedalar();
+            document.write('------------------------------');
+            document.write('<br>');
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
